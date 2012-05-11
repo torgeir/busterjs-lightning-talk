@@ -392,7 +392,7 @@ Testene kjøres automatisk
 
 # Shameless plug
 
-.circle.yellow.center[ Remark ]
+.circle.yellow.center[ remark ]
 
 [gnab.github.com/remark](//gnab.github.com/remark/) 
 
@@ -408,5 +408,16 @@ Testene kjøres automatisk
 
     </textarea>
     <div id="slideshow"></div>
+    <script>
+      window.onkeypress = function (e) {
+        if (e.ctrlKey && e.keyCode === 10) {
+          var body = document.body;
+          var rfs = body.requestFullScreen       ||
+                    body.webkitRequestFullScreen || 
+                    body.mozRequestFullScreen;
+          rfs.call(body);
+        }
+      }
+    </script>
   </body>
 </html>
