@@ -1,0 +1,231 @@
+/* ---------------------------------- */
+/* --- BEKK theme ------------------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* --- Colors ----------------------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* --- Sizes ------------------------ */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* --- Useful mixins ---------------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* --- Slideshow styles ------------- */
+/* ---------------------------------- */
+#slideshow .slide {
+  color: #ffffff;
+  background-color: #000000;
+}
+#slideshow .slide .content {
+  padding-bottom: 2em;
+  /* ---------------------------------- */
+
+  /* --- General styles --------------- */
+
+  /* ---------------------------------- */
+
+  /* ---------------------------------- */
+
+  /* --- Additional classes ----------- */
+
+  /* ---------------------------------- */
+
+  /* ---------------------------------- */
+
+  /* --- Content slides --------------- */
+
+  /* ---------------------------------- */
+
+}
+#slideshow .slide .content ul {
+  list-style: disc outside;
+  padding-left: 1em;
+}
+#slideshow .slide .content ul li {
+  color: #ffffff;
+  padding: 0.4em 0;
+}
+#slideshow .slide .content h1 {
+  color: #fd5158;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+#slideshow .slide .content h1:before {
+  border-top: 1px solid #c9c0b5;
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#slideshow .slide .content h1 > span {
+  background: #000000;
+  padding: 0 0.6em 0 0;
+}
+#slideshow .slide .content h1 code {
+  text-transform: none;
+  font-style: normal;
+}
+#slideshow .slide .content a {
+  color: #fd5158;
+  text-decoration: none;
+}
+#slideshow .slide .content a:hover {
+  text-decoration: underline;
+}
+#slideshow .slide .content code {
+  padding: 3px;
+  color: #000000;
+  font-family: Inconsolata, Consolas, Monaco, monospace;
+}
+#slideshow .slide .content pre code {
+  padding: 1em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+#slideshow .slide .content .position {
+  font-size: 0.7em;
+}
+#slideshow .slide .content .circle {
+  -moz-border-radius: 85px;
+  -webkit-border-radius: 85px;
+  -khtml-border-radius: 85px;
+  border-radius: 85px;
+  height: 170px;
+  width: 170px;
+  line-height: 170px;
+  color: #000000;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+#slideshow .slide .content .circle.red {
+  background-color: #fd5158;
+}
+#slideshow .slide .content .circle.yellow {
+  background-color: #fff9ae;
+}
+#slideshow .slide .content .circle.top-right {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+}
+#slideshow .slide .content .circle.top-left {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+}
+#slideshow .slide .content .circle.centered {
+  margin: 0 auto;
+}
+#slideshow .slide .content.middle h1:before,
+#slideshow .slide .content.center h1:before {
+  border: none;
+}
+#slideshow .slide .content.cols .col {
+  float: left;
+  margin-right: 2%;
+}
+#slideshow .slide .content.cols .col h1 {
+  font-size: 1.1em;
+  color: #ffffff;
+  text-transform: none;
+  font-style: normal;
+}
+#slideshow .slide .content.cols .col:last-child {
+  margin-right: 0;
+}
+#slideshow .slide .content.cols.two .col {
+  width: 49%;
+}
+#slideshow .slide .content.cols.three .col {
+  width: 32%;
+}
+#slideshow .slide .content.front-page {
+  text-align: center;
+  font-style: italic;
+  vertical-align: bottom;
+  background-image: url("https://github.com/kjbekkelund/remark-bekk/raw/master/lib/images/bekk.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  background-size: 66.57142857142857px 16.428571428571427px;
+}
+#slideshow .slide .content.front-page h1 {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  margin: 0 auto 3.2em auto;
+  width: 16em;
+}
+#slideshow .slide .content.front-page h1:before {
+  border: none;
+}
+#slideshow .slide .content.front-page h1:after {
+  border-top: 4px solid #fd5158;
+  position: absolute;
+  left: 50%;
+  bottom: -1.6em;
+  content: "";
+  width: 6em;
+  margin-left: -3em;
+  z-index: -1;
+}
+#slideshow .slide .content.front-page h2 {
+  height: 3em;
+  font-size: 1em;
+  color: #c9c0b5;
+  font-weight: normal;
+  margin: 2em auto 2em auto;
+  max-width: 25em;
+}
+#slideshow .slide .content.front-page p {
+  font-size: 0.7em;
+  color: #c9c0b5;
+  margin: 0.3em 0;
+}
+#slideshow .slide .content.front-page .position {
+  display: none;
+}
+#slideshow .slide .content.agenda ul {
+  list-style-type: none;
+  padding-left: 0;
+  bottom: 1em;
+  position: absolute;
+}
+#slideshow .slide .content.agenda ul li {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1em 0;
+  font-weight: normal;
+}
+#slideshow .slide .content.round img {
+  position: absolute;
+  top: 50%;
+  margin-top: -216px;
+  left: 50%;
+  margin-left: -216.5px;
+  height: 432px;
+}
+#slideshow .slide .content.pushed h1 {
+  margin-top: 17em;
+}
+#slideshow .slide .content.pushed .img {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  bottom: 8.5em;
+  left: 2em;
+  overflow: hidden;
+}
+#slideshow .slide .content.pushed .img img {
+  width: 100%;
+}
