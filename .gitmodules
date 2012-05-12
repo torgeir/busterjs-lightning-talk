@@ -1,3 +1,0 @@
-[submodule "vendor/remark-bekk"]
-	path = vendor/remark-bekk
-	url = git@github.com:torgeir/remark-bekk.git
