@@ -186,8 +186,7 @@ Prosjekt-struktur
     ├── lib
     │   └── math-genious.js
     └── test
-        ├── buster-browser.js
-        ├── buster-node.js
+        ├── buster.js
         └── math-genious-test.js
 
     2 directories, 4 files
@@ -250,7 +249,7 @@ Prosjekt-struktur
 
 # Eksempel - konfig for node 
 
-`test/buster-node.js`
+`test/buster.js`
 
     module\.exports['node tests'] = {
 
@@ -269,7 +268,7 @@ Prosjekt-struktur
 
 # Eksempel - konfig for browser
 
-`test/buster-browser.js`
+`test/buster.js`
 
     module\.exports['browser tests'] = {
 
@@ -293,7 +292,7 @@ Prosjekt-struktur
 # Eksempel - Kjøring av node-tester
 
     .bash
-    $ buster test -c buster-node.js
+    $ buster test -g node
 
      math genious: ..
      1 test case, 2 tests, 2 assertions, 0 failures,
@@ -319,7 +318,7 @@ Capture en browser
 Kjør testene i de captura browserne
 
     .bash
-    $ buster test -c buster-browser.js
+    $ buster test -g browser
 
      Chrome 20.0, Linux: ..
      1 test case, 2 tests, 2 assertions, 0 failures,
@@ -349,7 +348,7 @@ Kjør testene i de captura browserne
 # Autotest
 
     .bash
-    $ buster autotest -c test/buster.js
+    $ buster autotest
      Watching /home/torgeir/code/
      Test command:
          buster-test  
