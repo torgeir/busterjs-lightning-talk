@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn;
 
 exports.run = function (fn) {
 
-  var test = spawn('buster', ['test', '-c', 'test/buster-browser.js'
+  var test = spawn('buster', ['test', '-g', 'browser'
                                     //, '-r', 'specification'
                                       ]);
   test.stdout.pipe(process.stdout);

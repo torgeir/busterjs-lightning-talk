@@ -1,8 +1,8 @@
 test-node:
-	@buster test -c test/buster-node.js
+	@buster test -g node
 
 test-browser:
-	@buster test -c test/buster-browser.js
+	@buster test -g browser
 
 test-phantom:
 	@node test/phantomjs-runner.js
